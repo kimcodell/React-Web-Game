@@ -58,7 +58,7 @@ const reducer = (state, action) => {    //어떤 action일 때 어떤 동작을 
 }
 
 const TicTacToe = () => {
-    const [state, dispatch] = useReducer(reducer, initialState);    //세번째 인자도 있긴 함.
+    const [state, dispatch] = useReducer(reducer, initialState);    //세번째 인자도 있긴 함. useReducer는 비동기적으로 state가 바뀜. 리덕스는 동기적
     const { tableData, turn, winner, recentCell } = state;
     // const [winner, setWinner] = useState('');
     // const [turn, setTurn] = useState('O');
